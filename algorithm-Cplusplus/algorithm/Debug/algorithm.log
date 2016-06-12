@@ -1,0 +1,14 @@
+﻿生成启动时间为 2016/6/10 20:04:17。
+     1>项目“F:\programming\algorithm\algorithm\algorithm.vcxproj”在节点 2 上(Build 个目标)。
+     1>Link:
+         D:\software\vs2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\programming\algorithm\Debug\algorithm.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\programming\algorithm\Debug\algorithm.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\programming\algorithm\Debug\algorithm.lib" /MACHINE:X86 Debug\AlgorithmTest.obj
+         Debug\Date.obj
+         Debug\SortBase.obj
+         Debug\Selection.obj
+     1>AlgorithmTest.obj : error LNK2001: 无法解析的外部符号 "public: virtual void __thiscall Selection<class Date,class Date>::sort(class std::vector<class Date,class std::allocator<class Date> > &)" (?sort@?$Selection@VDate@@V1@@@UAEXAAV?$vector@VDate@@V?$allocator@VDate@@@std@@@std@@@Z)
+     1>F:\programming\algorithm\Debug\algorithm.exe : fatal error LNK1120: 1 个无法解析的外部命令
+     1>已完成生成项目“F:\programming\algorithm\algorithm\algorithm.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:01.57
