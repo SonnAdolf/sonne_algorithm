@@ -18,12 +18,21 @@
     <ClCompile Include="algorithm_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="sort_class.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sort_class.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="entity_class.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="insertion_class.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="selection_class.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

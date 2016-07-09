@@ -116,9 +116,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="algorithm_test.cpp" />
+    <ClCompile Include="sort_class.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="entity_class.h" />
+    <ClInclude Include="insertion_class.h" />
+    <ClInclude Include="selection_class.h" />
     <ClInclude Include="sort_class.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

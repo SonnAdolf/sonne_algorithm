@@ -1,43 +1,60 @@
-﻿生成启动时间为 2016/7/9 21:34:05。
+﻿生成启动时间为 2016/7/9 22:06:15。
      1>项目“D:\WorkSpace\algorithm\algorithm-Cplusplus\algorithm\algorithm.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         D:\software\vs2013\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt algorithm_test.cpp
+         D:\software\vs2013\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt algorithm_test.cpp sort_class.cpp
+         sort_class.cpp
+         正在生成代码...
+         正在编译...
          algorithm_test.cpp
-     1>d:\workspace\algorithm\algorithm-cplusplus\algorithm\sort_class.h(54): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-                 d:\workspace\algorithm\algorithm-cplusplus\algorithm\sort_class.h(53): 编译类 模板 成员函数“void SortBase<T1>::PrintArr(std::vector<Date,std::allocator<_Ty>> &)”时
+     1>d:\workspace\algorithm\algorithm-cplusplus\algorithm\sort_class.h(40): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+                 d:\workspace\algorithm\algorithm-cplusplus\algorithm\sort_class.h(39): 编译类 模板 成员函数“void SortBase<T1>::PrintArr(std::vector<Date,std::allocator<_Ty>> &)”时
                  with
                  [
                      T1=Date
          ,            _Ty=Date
                  ]
-                 algorithm_test.cpp(31): 参见对正在编译的函数 模板 实例化“void SortBase<T1>::PrintArr(std::vector<Date,std::allocator<_Ty>> &)”的引用
+                 algorithm_test.cpp(33): 参见对正在编译的函数 模板 实例化“void SortBase<T1>::PrintArr(std::vector<Date,std::allocator<_Ty>> &)”的引用
                  with
                  [
                      T1=Date
          ,            _Ty=Date
                  ]
-                 d:\workspace\algorithm\algorithm-cplusplus\algorithm\sort_class.h(38): 参见对正在编译的类 模板 实例化“SortBase<T1>”的引用
+                 d:\workspace\algorithm\algorithm-cplusplus\algorithm\selection_class.h(13): 参见对正在编译的类 模板 实例化“SortBase<T1>”的引用
                  with
                  [
                      T1=Date
                  ]
-                 algorithm_test.cpp(29): 参见对正在编译的类 模板 实例化“Insertion<Date,Date>”的引用
-     1>d:\workspace\algorithm\algorithm-cplusplus\algorithm\sort_class.h(83): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-                 d:\workspace\algorithm\algorithm-cplusplus\algorithm\sort_class.h(82): 编译类 模板 成员函数“void Insertion<Date,Date>::Sort(std::vector<Date,std::allocator<_Ty>> &)”时
+                 algorithm_test.cpp(31): 参见对正在编译的类 模板 实例化“Selection<Date,Date>”的引用
+     1>d:\workspace\algorithm\algorithm-cplusplus\algorithm\selection_class.h(21): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+                 d:\workspace\algorithm\algorithm-cplusplus\algorithm\selection_class.h(20): 编译类 模板 成员函数“void Selection<Date,Date>::Sort(std::vector<Date,std::allocator<_Ty>> &)”时
                  with
                  [
                      _Ty=Date
                  ]
-                 algorithm_test.cpp(30): 参见对正在编译的函数 模板 实例化“void Insertion<Date,Date>::Sort(std::vector<Date,std::allocator<_Ty>> &)”的引用
+                 algorithm_test.cpp(32): 参见对正在编译的函数 模板 实例化“void Selection<Date,Date>::Sort(std::vector<Date,std::allocator<_Ty>> &)”的引用
                  with
                  [
                      _Ty=Date
                  ]
+     1>d:\workspace\algorithm\algorithm-cplusplus\algorithm\insertion_class.h(21): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+                 d:\workspace\algorithm\algorithm-cplusplus\algorithm\insertion_class.h(20): 编译类 模板 成员函数“void Insertion<Date,Date>::Sort(std::vector<Date,std::allocator<_Ty>> &)”时
+                 with
+                 [
+                     _Ty=Date
+                 ]
+                 algorithm_test.cpp(40): 参见对正在编译的函数 模板 实例化“void Insertion<Date,Date>::Sort(std::vector<Date,std::allocator<_Ty>> &)”的引用
+                 with
+                 [
+                     _Ty=Date
+                 ]
+                 algorithm_test.cpp(39): 参见对正在编译的类 模板 实例化“Insertion<Date,Date>”的引用
+         正在生成代码...
        Link:
          D:\software\vs2013\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\WorkSpace\algorithm\algorithm-Cplusplus\x64\Debug\algorithm.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\WorkSpace\algorithm\algorithm-Cplusplus\x64\Debug\algorithm.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\WorkSpace\algorithm\algorithm-Cplusplus\x64\Debug\algorithm.lib" /MACHINE:X64 x64\Debug\algorithm_test.obj
+         x64\Debug\sort_class.obj
          algorithm.vcxproj -> D:\WorkSpace\algorithm\algorithm-Cplusplus\x64\Debug\algorithm.exe
      1>已完成生成项目“D:\WorkSpace\algorithm\algorithm-Cplusplus\algorithm\algorithm.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:03.36
+已用时间 00:00:04.20

@@ -8,6 +8,8 @@ Description:≤‚ ‘
 
 #include "sort_class.h"
 #include "entity_class.h"
+#include "insertion_class.h"
+#include "selection_class.h"
 
 vector<Date> getTestData()
 {
@@ -23,12 +25,26 @@ vector<Date> getTestData()
 	return vec;
 }
 
-void main()
+void selectionTest()
 {
 	vector<Date> vec = getTestData();
-	Insertion<Date,Date> insertion;
+	Selection<Date, Date> selection;
+	selection.Sort(vec);
+	selection.PrintArr(vec);
+}
+
+void insertionTest()
+{
+	vector<Date> vec = getTestData();
+	Insertion<Date, Date> insertion;
 	insertion.Sort(vec);
 	insertion.PrintArr(vec);
+}
+
+void main()
+{
+	selectionTest();
+	insertionTest();
 	cin.get();
 }
 
