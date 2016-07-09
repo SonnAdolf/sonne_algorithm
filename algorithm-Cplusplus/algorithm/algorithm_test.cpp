@@ -26,9 +26,9 @@ vector<Date> getTestData()
 void main()
 {
 	vector<Date> vec = getTestData();
-	Selection<Date,Date> selection;
-	selection.Sort(vec);
-	selection.PrintArr(vec);
+	Insertion<Date,Date> insertion;
+	insertion.Sort(vec);
+	insertion.PrintArr(vec);
 	cin.get();
 }
 
