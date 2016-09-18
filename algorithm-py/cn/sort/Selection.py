@@ -3,7 +3,8 @@ Created on 2016-6-11
 
 @author: sonn
 '''
-from cn.sort.Base import Base
+from Base import Base
+#from cn.sort.Base import Base
 
 class Selection(Base):
     

@@ -4,8 +4,14 @@ Created on 2016-6-11
 @author: sonn
 '''
 
-from cn.data.Date import Date
-from cn.sort.Selection import Selection
+import sys
+sys.path.append('/home/sonn/coding/algorithm/algorithm-py/cn/data/')
+sys.path.append('/home/sonn/coding/algorithm/algorithm-py/cn/sort/')
+from Date import Date
+from Selection import Selection
+#from cn.data.Date import Date
+#from cn.sort.Selection import Selection
+
 
 def getArrForSortTest():
     date1 = Date(1992,7,11)
