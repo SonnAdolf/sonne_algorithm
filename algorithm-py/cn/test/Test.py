@@ -5,10 +5,13 @@ Created on 2016-6-11
 '''
 
 import sys
-sys.path.append('/home/sonn/coding/algorithm/algorithm-py/cn/data/')
-sys.path.append('/home/sonn/coding/algorithm/algorithm-py/cn/sort/')
+BASE_PATH = '/home/sonn/coding/algorithm/algorithm-py/cn/'
+sys.path.append(BASE_PATH + 'data/')
+sys.path.append(BASE_PATH + 'sort/')
+
 from Date import Date
 from Selection import Selection
+from Insertion import Insertion
 #from cn.data.Date import Date
 #from cn.sort.Selection import Selection
 
@@ -23,8 +26,12 @@ def getArrForSortTest():
 
 if __name__ == '__main__':
     arr = getArrForSortTest()
-    selection = Selection()
-    selection.sort(arr)
-    selection.printArr(arr)
-
+	
+    #selection = Selection()
+    #selection.sort(arr)
+    #selection.printArr(arr)
+	
+    insertion = Insertion()
+    insertion.sort(arr)
+    insertion.printArr(arr)
     
