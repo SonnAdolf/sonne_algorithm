@@ -12,9 +12,10 @@ sys.path.append(BASE_PATH + 'sort/')
 from Date import Date
 from Selection import Selection
 from Insertion import Insertion
+from Shell import Shell
 #from cn.data.Date import Date
 #from cn.sort.Selection import Selection
-
+#from cn.sort.Shell import Shell
 
 def getArrForSortTest():
     date1 = Date(1992,7,11)
@@ -31,7 +32,10 @@ if __name__ == '__main__':
     #selection.sort(arr)
     #selection.printArr(arr)
 	
-    insertion = Insertion()
-    insertion.sort(arr)
-    insertion.printArr(arr)
-    
+    #insertion = Insertion()
+    #insertion.sort(arr)
+    #insertion.printArr(arr)
+        
+    shell = Shell()
+    shell.sort(arr)
+    shell.printArr(arr)
