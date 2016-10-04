@@ -1,3 +1,8 @@
+'''
+@author sonn
+@date Sep 19 2016
+@func Insertion sort
+'''
 from Base import Base
 #from cn.sort.Base import Base
 

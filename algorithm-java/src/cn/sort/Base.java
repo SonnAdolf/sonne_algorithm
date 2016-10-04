@@ -2,9 +2,9 @@ package cn.sort;
 
 /**
 * @ClassName: Base 
-* @Description: еепРюЮ╩ЫюЮ
-* @author нчцШ
-* @date 2016-6-9 обнГ1:06:52 
+* @Description: О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫
+* @author sonn
+* @date 2016-6-9 О©╫О©╫О©╫О©╫1:06:52 
 * @version 1.0
  */
 

@@ -2,6 +2,8 @@
 @author sonn
 @date Sep 20 2016
 @func Shell sort
+      If you want to solve a data-sort problem,but do not have a sorting libarary to use
+         you can pay the utmost attention to Shell 
 '''
 from Base import Base
 
