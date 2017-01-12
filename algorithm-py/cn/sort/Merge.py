@@ -7,41 +7,38 @@
 from Base import Base
 
 class Merge():
-	def merge(self, arr, lo, mid, hi):
-		tmp_arr = []
-		for i in range(lo, hi+1):
-			tmp_arr.append(arr[i])
+	def __init__(self):
+		self.tmp_arr = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+
+	def merge(self, arr, start, mid, end):
+		for i in range(start, end+1):
+			self.tmp_arr[i] = arr[i]
 		j = mid + 1
-  		k = lo
-		for i in range(lo, hi+1):
+		k = start
+		for i in range(start, end+1):
 			if k > mid:
-				arr[i] = tmp_arr[j]
+				arr[i] = self.tmp_arr[j]
 				j += 1
-			elif j > hi:
-				arr[i] = tmp_arr[k]
+			elif j > end:
+				arr[i] = self.tmp_arr[k]
 				k += 1
-			elif tmp_arr[j] < tmp_arr[k]:
-				arr[i] = tmp_arr[j]
+			elif self.tmp_arr[j] < self.tmp_arr[k]:
+				arr[i] = self.tmp_arr[j]
 				j += 1
 			else:
-				arr[i] = tmp_arr[k]
+				arr[i] = self.tmp_arr[k]
 				k += 1
-	def sort(self, arr, lo, hi):
-		if hi <= lo:
+	def sort(self, arr, start, end):
+		if end <= start:
 			return 
-		mid = lo + (hi - lo) / 2
-		self.sort(arr, lo, mid)
-		self.sort(arr, mid + 1, hi)
-		self.merge(arr, lo, mid ,hi)
+		mid = start + (end - start) / 2
+		self.sort(arr, start, mid)
+		self.sort(arr, mid + 1, end)
+		self.merge(arr, start, mid ,end)
 		
 		
 	
 mobj = Merge()
-arr = [2,6,8,10,22,33,35,1,3,9,11,14,15,18,20]
-for i in range(0, 15):
-	print arr[i]
-mobj.merge(arr, 0, 6, 14)
-print arr
 arr = [5,3,4,7,1,9,0,4,2,6,8]
 mobj.sort(arr, 0, len(arr)-1)
 for i in range(len(arr)):

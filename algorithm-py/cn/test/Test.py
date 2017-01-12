@@ -4,18 +4,18 @@ Created on 2016-6-11
 @author: sonn
 '''
 
-import sys
-BASE_PATH = '/home/sonn/coding/algorithm/algorithm-py/cn/'
-sys.path.append(BASE_PATH + 'data/')
-sys.path.append(BASE_PATH + 'sort/')
-
-from Date import Date
-from Selection import Selection
-from Insertion import Insertion
-from Shell import Shell
-#from cn.data.Date import Date
-#from cn.sort.Selection import Selection
-#from cn.sort.Shell import Shell
+# import sys
+# BASE_PATH = '/home/sonn/coding/algorithm/algorithm-py/cn/'
+# sys.path.append(BASE_PATH + 'data/')
+# sys.path.append(BASE_PATH + 'sort/')
+# 
+# from Date import Date
+# from Selection import Selection
+# from Insertion import Insertion
+# from Shell import Shell
+from cn.data.Date import Date
+from cn.sort.Selection import Selection
+from cn.sort.Shell import Shell
 
 def getArrForSortTest():
     date1 = Date(1992,7,11)
